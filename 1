@@ -12,7 +12,7 @@ int main(){
 		printf("The given directory does not exist.\n");
 		exit(1);
 	}
-	printf("Contents od directory %s:\n",buff);
+	printf("Contents of directory %s:\n",buff);
 	while((dptr = readdir(dirp)) != NULL){
 		printf("%s\n",dptr->d_name);
 	}
